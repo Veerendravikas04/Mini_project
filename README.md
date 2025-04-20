@@ -47,8 +47,8 @@ But in large environments like **Connect 4**:
 
 ---
 
-## you have to run the coded and downlod the .pth file yourself
-  Run the code in your local and download the .ptth file
+## you have to run the code and downlod the .pth file yourself
+  Run the code in your local and download the .pth file and attach the .pth file to your backend
 ---
 
 ## ⚙️ Setup Instructions
