@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4 | Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">CONNECT 4</div>
+        <ul class="nav-links">
+            <li><a href="#" class="nav-link home-link">Home</a></li>
+            <li><a href="#about" class="nav-link about-link">About</a></li>
+            <li><a href="#developers" class="nav-link developers-link">Developers</a></li>
+            <li><a href="#more" class="nav-link more-link">More</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="home-container">
+        <h1>Welcome to Connect 4</h1>
+        <p>Challenge the AI and test your strategy!</p>
+        <button id="playNowBtn">Play Now</button>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section fade-in" style="text-align: left; padding: 0 20px;">
+        <h2 class="about-heading">About Connect 4</h2>
+        <p style="margin-bottom: 20px;">
+            Connect 4 is a timeless two-player strategy game where players alternately drop colored discs into a vertical grid. The objective is to align four discs in a row—vertically, horizontally, or diagonally—before your opponent does.
+        </p>
+        <p>
+            This digital version lets you play against a smart AI with a modern interface. Whether you're sharpening your strategic skills or playing for fun, Connect 4 offers a simple yet challenging experience for all ages.
+        </p>
+    </section>
+
+    <!-- Developers Section -->
+    <section id="developers" class="section fade-in">
+        <h2>Our Developers</h2>
+        <div class="developer-gallery">
+            <div class="developer-row">
+                <div class="developer">
+                    <img src="/static/assets/developer1.jpg" alt="Developer 1">
+                    <p>VEERENDRA <br> ID: N200616</p>
+                </div>
+                <div class="developer">
+                    <img src="/static/assets/developer2.jpg" alt="Developer 2">
+                    <p>SIDDARDHA <br> ID: N200525</p>
+                </div>
+                <div class="developer">
+                    <img src="/static/assets/developer3.jpg" alt="Developer 3">
+                    <p>DILEEP KUMAR <br> ID: N200791</p>
+                </div>
+            </div>
+            <div class="developer-row">
+                <div class="developer">
+                    <img src="/static/assets/developer4.jpg" alt="Developer 4">
+                    <p>GOPAL <br> ID: N200045</p>
+                </div>
+                <div class="developer">
+                    <img src="/static/assets/developer5.jpg" alt="Developer 5">
+                    <p>PRANEETH<br> ID: N200726</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Section -->
+    <section id="more" class="section fade-in" style="text-align: left; padding: 0 20px;">
+        <h2>More</h2>
+        <h3>How to Play Connect 4</h3>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+            <li style="margin-bottom: 10px;"><strong>Start the Game:</strong> The game begins with the player making the first move by clicking on any column to drop a disc.</li>
+            <li style="margin-bottom: 10px;"><strong>Disc Drops Automatically:</strong> The disc will fall to the lowest available position in the selected column.</li>
+            <li style="margin-bottom: 10px;"><strong>AI Takes Its Turn:</strong> After the player’s move, the AI instantly plays its turn by placing its disc in a strategic spot.</li>
+            <li style="margin-bottom: 10px;"><strong>Alternate Turns:</strong> The player and AI continue to take turns until the board is full or one of them connects four discs in a row.</li>
+            <li style="margin-bottom: 10px;"><strong>Win Condition:</strong> The game ends when either the player or the AI forms a consecutive line of four discs vertically, horizontally, or diagonally.</li>
+            <li style="margin-bottom: 10px;"><strong>Game Over:</strong> If the board fills up with no winner, the game results in a draw.</li>
+        </ul>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+</body>
+</html>

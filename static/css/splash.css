@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #8e0000, #000000);
+    color: white;
+    overflow: hidden;
+}
+
+.splash-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Heading */
+.splash-page h1 {
+    font-size: 4.5rem;
+    color: #e74c3c;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 1.5rem;
+    color: #ecf0f1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Down Arrow */
+.down-arrow-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    transition: transform 0.3s;
+    animation: bounce 2s infinite ease-in-out;
+    margin-top: 30px;
+}
+
+.down-arrow-btn:hover {
+    transform: translateY(5px);
+}
+
+.arrow-icon {
+    color: #f39c12;
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+}
+
+/* Cinematic Slow Fade/Slide */
+.fade-slow {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeSlideUp 1.5s ease-out forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.5s;
+}
+.delay-2 {
+    animation-delay: 1.5s;
+}
+.delay-3 {
+    animation-delay: 2.5s;
+}
+
+@keyframes fadeSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bounce for arrow */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Connect 4 - Reinforcement Learning AI</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Connect 4</h1>
+      <p>Play against an AI trained using Reinforcement Learning</p>
+    </header>
+
+    <div class="game-controls">
+      <div class="difficulty-selector">
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium" selected>Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <button id="reset-game">New Game</button>
+    </div>
+
+    <div class="game-status">
+      <div id="status-message">Your turn! Click on a column to drop a disc.</div>
+    </div>
+
+    <div class="board-container">
+      <div class="column-buttons">
+        <button class="column-btn" data-column="0"></button>
+        <button class="column-btn" data-column="1"></button>
+        <button class="column-btn" data-column="2"></button>
+        <button class="column-btn" data-column="3"></button>
+        <button class="column-btn" data-column="4"></button>
+        <button class="column-btn" data-column="5"></button>
+        <button class="column-btn" data-column="6"></button>
+      </div>
+      <div class="game-board" id="game-board"></div>
+    </div>
+
+    <div class="game-info">
+      <div class="player-info">
+        <div class="player player-human">
+          <div class="player-disc player-disc-red"></div>
+          <div class="player-name">You (Red)</div>
+        </div>
+        <div class="player player-ai">
+          <div class="player-disc player-disc-yellow"></div>
+          <div class="player-name">AI (Yellow)</div>
+        </div>
+      </div>
+      <div class="game-instructions">
+        <h3>How to Play</h3>
+        <ol>
+          <li>Click on a column to drop your disc (red)</li>
+          <li>The AI will automatically make its move (yellow)</li>
+          <li>Connect 4 discs vertically, horizontally, or diagonally to win</li>
+          <li>Change the difficulty level to challenge yourself</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game Over Dialog -->
+  <div id="game-over-dialog">
+    <h2 id="game-over-message">Game Over</h2>
+    <button id="dialog-ok">OK</button>
+  </div>
+  
+  
+
+  <footer>
+    <p>Created with Reinforcement Learning and Neural Networks</p>
+  </footer>
+
+  <script src="/static/js/game.js"></script>
+</body>
+</html>
